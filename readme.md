@@ -2,10 +2,19 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Flask](https://img.shields.io/badge/Flask-lightweight-black)
 ![License](https://img.shields.io/badge/License-MIT-green)
+
 A local-first file server for browsing, sharing, and streaming media across devices on the same network.  
 No accounts, no cloud, no internet — just run it and open a browser.
 
 Think of it as a lightweight personal NAS you can spin up in seconds.
+
+---
+
+## Why Zynox?
+
+Most tools either focus on file storage (like Google Drive) or media streaming (like Plex).
+
+Zynox combines both into a simple, local-first system that works instantly across devices without setup or accounts.
 
 ---
 
@@ -34,6 +43,12 @@ The frontend is plain HTML, CSS, and JavaScript — no frameworks. It fetches da
 If FFmpeg is available, Zynox generates thumbnails for videos. Otherwise, it falls back to a simple preview.
 
 ---
+## Architecture (Simplified)
+
+- Flask backend serves APIs for files and streaming
+- Frontend fetches data and renders UI dynamically
+- Media is streamed using HTTP range requests
+- Optional FFmpeg generates thumbnails
 
 ## Setup
 
@@ -41,7 +56,7 @@ If FFmpeg is available, Zynox generates thumbnails for videos. Otherwise, it fal
 **Optional:** FFmpeg (for video thumbnails)
 
 ```bash
-git clone https://github.com/yourname/zynox.git
+git clone https://github.com/Garv-Tech/zynox-filehub.git
 cd zynox
 pip install -r requirements.txt
 python server.py
@@ -76,6 +91,13 @@ http://<your-ip>:5000
 - On mobile, add it to your home screen for a cleaner experience
 
 Streaming works for formats supported by your browser (MP4, WebM, MP3, etc.).
+
+---
+
+## Screenshots
+
+![Main UI](assets/ui.png)
+![Playback](assets/playback.png)
 
 ---
 
