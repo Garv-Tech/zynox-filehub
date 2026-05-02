@@ -132,9 +132,17 @@ Streaming works for any format your browser supports natively (MP4, WebM, MP3, e
 
 ## 📸 Screenshots
 
-![Zynox UI](assets/ui.png)
+### 🎬 Streaming Experience
 ![Playback](assets/playback.png)
--->
+
+![Playback Alternate](assets/playback1.png)
+
+> Stream media instantly — no downloads, no buffering reloads.
+
+---
+
+### 🗂 File Explorer
+![File Explorer](assets/fileexplorer.png)
 
 ---
 
